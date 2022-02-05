@@ -30,15 +30,22 @@
 		"tc-preload": "tsc --noEmit -p packages/preload/tsconfig.json",
 		"tc-renderer": "vue-tsc --noEmit -p packages/renderer/tsconfig.json",
 		"tc": "pnpm run tc-main && pnpm run tc-preload && pnpm run tc-renderer",
-		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
-		"ptc-renderer": "dts-cb -i packages/preload/src/**/*.ts -o packages/preload/exposedInMainWorld.d.ts"
+		"test": "NODE_OPTIONS=--experimental-vm-modules jest"
 	},
 	"dependencies": {
+		"@bitwarden/cli": "^1.20.0",
+		"autoprefixer": "^10.4.2",
 		"desm": "^1.2.0",
 		"electron-updater": "^4.6.1",
+		"nanoid": "^3.2.0",
+		"nanoid-good": "^3.1.0",
+		"postcss": "^8.4.6",
+		"round-to": "^6.0.0",
+		"tailwindcss": "^3.0.18",
 		"type-fest": "^2.11.1",
 		"vue": "^3.2.26",
-		"vue-router": "^4.0.12"
+		"vue-router": "^4.0.12",
+		"word-list": "^3.1.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^15.0.0",

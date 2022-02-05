@@ -1,13 +1,5 @@
 import { contextBridge } from 'electron';
-import process from 'node:process';
-
-const apiKey = 'electron';
-/**
- * @see https://github.com/electron/electron/issues/21437#issuecomment-573522360
- */
-const api = {
-	versions: process.versions,
-} as const;
+import * as emailModule from './modules/email.js';
 
 /**
  * The "Main World" is the JavaScript context that your main renderer code runs in.
@@ -15,4 +7,4 @@ const api = {
  *
  * @see https://www.electronjs.org/docs/api/context-bridge
  */
-contextBridge.exposeInMainWorld(apiKey, api);
+contextBridge.exposeInMainWorld('emailModule', emailModule);

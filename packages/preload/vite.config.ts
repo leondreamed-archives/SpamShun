@@ -19,7 +19,7 @@ const config: UserConfig = {
 	envDir: process.cwd(),
 	resolve: {
 		alias: {
-			'~': path.join(PACKAGE_ROOT, 'src'),
+			'~p': path.join(PACKAGE_ROOT, 'src'),
 		},
 	},
 	build: {
@@ -33,7 +33,7 @@ const config: UserConfig = {
 			formats: ['cjs'],
 		},
 		rollupOptions: {
-			external: ['electron', ...builtinModules],
+			external: ['electron', 'word-list', ...builtinModules],
 			output: {
 				entryFileNames: '[name].cjs',
 			},

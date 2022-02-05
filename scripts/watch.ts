@@ -28,6 +28,7 @@ const stderrFilterPatterns = [
 	// https://github.com/cawa-93/vite-electron-builder/issues/492
 	// https://github.com/MarshallOfSound/electron-devtools-installer/issues/143
 	/ExtensionLoadWarning/,
+	/chrome-devtools-frontend/,
 ];
 
 type GetWatcherProps = {
@@ -75,9 +76,9 @@ const setupMainPackageWatcher = async (
 			spawnProcess = spawn(String(electronPath), ['.']);
 
 			spawnProcess.stdout.on('data', (data: Buffer) => {
-				const dString = data.toString();
-				if (dString.trim() !== '') {
-					logger.warn(dString, { timestamp: true });
+				const dataString = data.toString();
+				if (dataString.trim() !== '') {
+					logger.warn(dataString, { timestamp: true });
 				}
 			});
 			spawnProcess.stderr.on('data', (data: Buffer) => {

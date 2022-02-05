@@ -3,9 +3,9 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"~/*": ["./src/*"]
+			"~p/*": ["./src/*"],
+			"~r/*": ["../renderer/src/*"]
 		},
-		"incremental": true
 	},
 	"files": ["src/index.ts"],
 	"include": ["../../types/**/*.d.ts"]
