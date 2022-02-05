@@ -6,6 +6,7 @@
 			"~p/*": ["./src/*"],
 			"~r/*": ["../renderer/src/*"]
 		},
+		"types": ["node"]
 	},
 	"files": ["src/index.ts"],
 	"include": ["../../types/**/*.d.ts"]

@@ -4,7 +4,7 @@ const routes = [
 	{
 		path: '/',
 		name: 'Home',
-		component: async () => import('~/components/home.vue'),
+		component: async () => import('~r/components/home.vue'),
 	},
 ];
 

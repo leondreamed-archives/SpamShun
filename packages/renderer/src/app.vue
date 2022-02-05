@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { roundTo } from 'round-to';
-import AppNavigation from '~/components/app-navigation.vue';
+import AppNavigation from '~r/components/app-navigation.vue';
 
 const a = roundTo(1.234, 2);
 </script>
