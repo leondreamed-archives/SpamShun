@@ -3,10 +3,17 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"~/*": ["./src/*"]
+			"~/*": [
+				"./src/*"
+			]
 		},
+		"typeRoots": [
+			"../../typings"
+		],
 		"incremental": true
 	},
-	"files": ["src/index.ts"],
-	"include": ["../../types/**/*.d.ts"]
+	"include": [
+		"src",
+		"../../typings/**/*.d.ts"
+	]
 }
