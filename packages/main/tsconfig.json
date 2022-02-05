@@ -3,16 +3,9 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"~/*": [
-				"./src/*"
-			]
+			"~/*": ["./src/*"]
 		},
-		"typeRoots": [
-			"../../typings"
-		],
+		"typeRoots": ["../../typings"]
 	},
-	"include": [
-		"src",
-		"../../typings/**/*.d.ts"
-	]
+	"include": ["src", "../../typings/**/*.d.ts"]
 }
