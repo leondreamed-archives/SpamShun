@@ -19,7 +19,7 @@ const config: UserConfig = {
 	root: PACKAGE_ROOT,
 	resolve: {
 		alias: {
-			'~': path.join(PACKAGE_ROOT, 'src'),
+			'~r': path.join(PACKAGE_ROOT, './src'),
 		},
 	},
 	plugins: [vue()],

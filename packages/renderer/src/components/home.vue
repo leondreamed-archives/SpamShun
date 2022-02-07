@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useEmailModule } from '~r/use/email';
+import { useEmailModule } from '~r/utils';
 
 const email = ref('');
 
