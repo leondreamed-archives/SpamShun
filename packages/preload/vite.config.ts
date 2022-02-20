@@ -33,7 +33,12 @@ const config: UserConfig = {
 			formats: ['cjs'],
 		},
 		rollupOptions: {
-			external: ['electron', 'word-list', ...builtinModules],
+			external: [
+				'electron',
+				'word-list',
+				...builtinModules,
+				...builtinModules.map((moduleName) => `node:${moduleName}`),
+			],
 			output: {
 				entryFileNames: '[name].cjs',
 			},

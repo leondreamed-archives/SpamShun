@@ -35,7 +35,10 @@ const config: UserConfig = {
 		outDir: 'dist',
 		assetsDir: '.',
 		rollupOptions: {
-			external: [...builtinModules],
+			external: [
+				...builtinModules,
+				...builtinModules.map((moduleName) => `node:${moduleName}`),
+			],
 		},
 		emptyOutDir: true,
 		brotliSize: false,

@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@bitwarden/cli': ^1.20.0
   '@commitlint/cli': ^15.0.0
-  '@leonzalion/configs': ^1.0.64
+  '@leonzalion/configs': ^1.0.66
   '@types/electron-devtools-installer': ^2.2.0
   '@types/node': ^17.0.0
   '@vitejs/plugin-vue': ^2.0.1
@@ -60,7 +60,7 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli': 15.0.0
-  '@leonzalion/configs': 1.0.64_e3ee11f6dc9a358faacdecd6755fe182
+  '@leonzalion/configs': 1.0.66_e3ee11f6dc9a358faacdecd6755fe182
   '@types/electron-devtools-installer': 2.2.1
   '@types/node': 17.0.15
   '@vitejs/plugin-vue': 2.1.0_vite@2.7.13+vue@3.2.29
@@ -600,8 +600,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.10
     dev: true
 
-  /@leonzalion/configs/1.0.64_e3ee11f6dc9a358faacdecd6755fe182:
-    resolution: {integrity: sha512-1K/rOm6oBndT4C2gf9jnWpFQGO9XsPSdnqCfM5BJMATVxN7n5QYcEvnlgoFND7FiJzakYSfZ5MWWEqxIx7Q3Dw==}
+  /@leonzalion/configs/1.0.66_e3ee11f6dc9a358faacdecd6755fe182:
+    resolution: {integrity: sha512-gsuXi10Kr2Y07IZtn4+5Ce7hRGN19nafYdHPi40gfnxrN21t4gwR6RG+OmOP4Q/NI8IJkLNTW+nIxU8fp47r8w==}
     hasBin: true
     peerDependencies:
       eslint: ^8.4.0
@@ -2374,15 +2374,16 @@ packages:
       iconv-lite: 0.6.3
       js-yaml: 4.1.0
     optionalDependencies:
-      dmg-license: 1.0.10
+      dmg-license: 1.0.11
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /dmg-license/1.0.10:
-    resolution: {integrity: sha512-SVeeyiOeinV5JCPHXMdKOgK1YVbak/4+8WL2rBnfqRYpA5FaeFaQnQWb25x628am1w70CbipGDv9S51biph63A==}
+  /dmg-license/1.0.11:
+    resolution: {integrity: sha512-ZdzmqwKmECOWJpqefloC5OJy1+WZBBse5+MR88z9g9Zn4VY+WYUkAyojmhzJckH5YbbZGcYIuGAkY5/Ys5OM2Q==}
     engines: {node: '>=8'}
     os: [darwin]
+    deprecated: 'Disk image license agreements are deprecated by Apple and will probably be removed in a future macOS release. Discussion at: https://github.com/argv-minus-one/dmg-license/issues/11'
     hasBin: true
     requiresBuild: true
     dependencies:

@@ -33,7 +33,12 @@ const config: UserConfig = {
 			formats: ['cjs'],
 		},
 		rollupOptions: {
-			external: ['electron', 'electron-devtools-installer', ...builtinModules],
+			external: [
+				'electron',
+				'electron-devtools-installer',
+				...builtinModules,
+				...builtinModules.map((moduleName) => `node:${moduleName}`),
+			],
 			output: {
 				entryFileNames: '[name].cjs',
 			},

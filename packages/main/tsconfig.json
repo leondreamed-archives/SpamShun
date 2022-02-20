@@ -1,9 +1,10 @@
 {
 	"extends": "../../tsconfig.json",
 	"compilerOptions": {
+		"rootDir": "../..",
 		"baseUrl": ".",
 		"paths": {
-			"~/*": ["./src/*"]
+			"~m/*": ["./src/*"]
 		},
 		"typeRoots": ["../../typings"]
 	},

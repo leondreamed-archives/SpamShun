@@ -1,13 +1,27 @@
 {
 	"extends": "../../tsconfig.json",
 	"compilerOptions": {
+		"rootDir": "../..",
 		"baseUrl": ".",
 		"paths": {
-			"~p/*": ["./src/*"],
-			"~r/*": ["../renderer/src/*"]
+			"~p/*": [
+				"./src/*"
+			],
+			"~r/*": [
+				"../renderer/src/*"
+			],
+			"~m/*": [
+				"../main/src/*"
+			]
 		},
-		"types": ["node"]
+		"types": [
+			"node"
+		]
 	},
-	"files": ["src/index.ts"],
-	"include": ["../../types/**/*.d.ts"]
+	"files": [
+		"src/index.ts"
+	],
+	"include": [
+		"../../types/**/*.d.ts"
+	]
 }
