@@ -1,5 +1,7 @@
 # SpamShun
 
+Project moved to https://github.com/leonzalion/reactive-emails
+
 ## The Problem
 
 I've been receiving a **ton** of spam emails recently, and it's gotten so bad to the point where I never bother to check my Spam email folder. However, one day, while I was waiting for a university interview email, I randomly decided to search for the university's name in my spam folder (which I hadn't touched for at least a month). Sure enough, I found an interview request email that had landed in the spam folder.
